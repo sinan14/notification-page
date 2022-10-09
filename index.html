@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!---displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Notifications page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="noti__title">
+        <div class="left__side">
+          <h1 class="page__heading">Notifications</h1>
+          <span class="notification__count">3</span>
+        </div>
+        <div class="right__side">
+          <p class="btn__mark-all">Mark all as read</p>
+        </div>
+      </div>
+      <ul class="notification__list">
+        <li class="notification__list-item notification__list-item-unread">
+          <div class="avatar__box">
+            <img
+              src="./assets/images/avatar-mark-webber.webp"
+              alt="mark weber photo"
+              class="avatar__imag"
+            />
+          </div>
+          <div class="notification__data">
+            <p class="notification__heading">
+              <strong class="user__name">Mark webber</strong> reacted to your
+              recent post
+              <span class="post__name"> My first tournament today! </span>
+              <span class="unread">&#8226;</span>
+            </p>
+            <p class="notification__time">1m ago</p>
+          </div>
+        </li>
+        <li class="notification__list-item notification__list-item-unread">
+          <div class="avatar__box">
+            <img
+              src="./assets/images/avatar-angela-gray.webp"
+              alt="angela gray photo"
+              class="avatar__imag"
+            />
+          </div>
+          <div class="notification__data">
+            <p class="notification__heading">
+              <strong class="user__name">Angela Gray</strong> followed you
+              <span class="unread">&#8226</span>
+            </p>
+            <p class="notification__time">5m ago</p>
+          </div>
+        </li>
+        <li class="notification__list-item notification__list-item-unread">
+          <div class="avatar__box">
+            <img
+              src="./assets/images/avatar-jacob-thompson.webp"
+              alt="Jacob thompson photo"
+              class="avatar__imag"
+            />
+          </div>
+          <div class="notification__data">
+            <p class="notification__heading">
+              <strong class="user__name">Jacob Thompson</strong> has joined your
+              group <strong class="club__name">Chess Club</strong>
+              <span class="unread">&#8226</span>
+            </p>
+            <p class="notification__time">1 day ago</p>
+          </div>
+        </li>
+        <li class="notification__list-item u-flex-wrap">
+          <div class="avatar__box">
+            <img
+              src="./assets/images/avatar-rizky-hasanuddin.webp"
+              alt="rizky Hasanuddin avatar"
+              class="avatar__imag"
+            />
+          </div>
+          <div class="notification__data">
+            <p class="notification__heading">
+              <strong class="user__name">Rizky Hasanuddin</strong> sent you a
+              private message<span class="unread"></span>
+            </p>
+            <p class="notification__time">5 days ago</p>
+          </div>
+          <div class="notification__detailed">
+            <p class="msg">
+              Hello, thanks for setting up the Chess Club. I've been a member
+              for a few weeks now and I'm already having lots of fun and
+              improving my game.
+            </p>
+          </div>
+        </li>
+        <li class="notification__list-item">
+          <div class="avatar__box">
+            <img
+              src="./assets/images/avatar-kimberly-smith.webp"
+              alt="Kimberly Smith photo"
+              class="avatar__imag"
+            />
+          </div>
+          <div class="notification__data">
+            <p class="notification__heading">
+              <strong class="user__name">Kimberly Smith</strong> commented on
+              your picture<span class="unread"></span>
+            </p>
+            <p class="notification__time">1 week ago</p>
+          </div>
+          <div class="avatar__box">
+            <img
+              src="./assets/images/image-chess.webp"
+              alt="my photo"
+              class="avatar__image my__tagged_avatar"
+            />
+          </div>
+        </li>
+        <li class="notification__list-item">
+          <div class="avatar__box">
+            <img
+              src="./assets/images/avatar-nathan-peterson.webp"
+              alt="Nathan Peterson photo"
+              class="avatar__imag"
+            />
+          </div>
+          <div class="notification__data">
+            <p class="notification__heading">
+              <strong class="user__name">Nathan Peterson</strong> reacted to
+              your recent post
+              <strong class="post__name">
+                5 end-game strategies to increase your win rate
+              </strong>
+              <span class="unread"></span>
+            </p>
+            <p class="notification__time">2 weeks ago</p>
+          </div>
+        </li>
+        <li class="notification__list-item">
+          <div class="avatar__box">
+            <img
+              src="./assets/images/avatar-anna-kim.webp"
+              alt="Anna Kim photo"
+              class="avatar__imag"
+            />
+          </div>
+          <div class="notification__data">
+            <p class="notification__heading">
+              <strong class="user__name">Anna Kim</strong> left the group<strong
+                class="club__name"
+                >Chess Club</strong
+              >
+              <span class="unread"></span>
+            </p>
+            <p class="notification__time">2 weeks ago</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

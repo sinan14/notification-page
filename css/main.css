@@ -1,0 +1,200 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  height: 100vh;
+  background-color: #e5effa;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+.u-flex-wrap {
+  flex-wrap: wrap !important;
+}
+
+.container {
+  width: 50%;
+  background-color: #ffffff;
+  margin: 48px auto;
+}
+@media only screen and (max-width: 75em) {
+  .container {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .container {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .container {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.noti__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3.2rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .noti__title {
+    padding: 1.6rem;
+  }
+}
+.noti__title .right__side {
+  display: flex;
+  align-items: center;
+}
+.noti__title .right__side .btn__mark-all {
+  color: #5e6778;
+  font-size: 1.4rem;
+}
+.noti__title .left__side {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.noti__title .left__side .page__heading {
+  color: #1c202b;
+  font-size: 2rem;
+}
+.noti__title .left__side .notification__count {
+  background-color: #0a317b;
+  width: 2.4rem;
+  height: 2rem;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.4rem;
+  padding-top: 0.1rem;
+  border-radius: 0.4rem;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  -ms-border-radius: 0.4rem;
+  -o-border-radius: 0.4rem;
+}
+
+.notification__list {
+  list-style-type: none;
+  color: #939dae;
+  padding: 0 3.2rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .notification__list {
+    padding: 0 1.6rem;
+  }
+}
+.notification__list-item-unread {
+  background-color: #f7fafd;
+}
+.notification__list-item {
+  padding: 1.2rem 0.6rem;
+  display: flex;
+  align-items: flex-start;
+}
+.notification__list-item:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+.notification__list-item .avatar__box {
+  width: 15%;
+  text-align: center;
+}
+.notification__list-item .avatar__box .avatar__imag {
+  width: 50%;
+}
+@media only screen and (max-width: 37.5em) {
+  .notification__list-item .avatar__box .avatar__imag {
+    width: 85%;
+  }
+}
+.notification__list-item .avatar__box .my__tagged_avatar {
+  width: 60%;
+}
+@media only screen and (max-width: 37.5em) {
+  .notification__list-item .avatar__box .my__tagged_avatar {
+    width: 85%;
+  }
+}
+.notification__list-item .notification__data {
+  width: 80%;
+}
+@media only screen and (max-width: 37.5em) {
+  .notification__list-item .notification__data {
+    padding-left: 1.2rem;
+  }
+}
+.notification__list-item .notification__heading .user__name {
+  color: #1c202b;
+  font-weight: 800;
+}
+.notification__list-item .notification__heading .post__name {
+  color: #5e6778;
+  font-weight: 800;
+}
+.notification__list-item .notification__heading .club__name {
+  color: #0a317b;
+  font-weight: 800;
+}
+.notification__list-item .notification__heading .club__name:hover,
+.notification__list-item .notification__heading .post__name:hover,
+.notification__list-item .notification__heading .user__name:hover {
+  color: #0a317b;
+  cursor: pointer;
+}
+.notification__list-item .notification__heading .unread {
+  color: #f65351;
+}
+.notification__list-item .notification__detailed {
+  flex-basis: 100%;
+  padding: 1.2rem 0 1.2rem 10%;
+}
+.notification__list-item .notification__detailed .msg {
+  padding: 1.6rem;
+  border: 1px solid #dde7ee;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+.notification__list-item .notification__detailed .msg:hover {
+  background-color: #e5effa;
+  cursor: pointer;
+}
+.notification__list-item .notification__time {
+  margin-top: 0.6rem;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,132 @@
+.noti__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3.2rem;
+  @include respond(phone) {
+    padding: 1.6rem;
+  }
+
+  .right__side {
+    display: flex;
+    align-items: center;
+    .btn__mark-all {
+      color: $DarkGrayishBlue;
+      font-size: 1.4rem;
+    }
+  }
+  .left__side {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    .page__heading {
+      color: $veryDarkBlue;
+      font-size: 2rem;
+    }
+    .notification__count {
+      background-color: $Blue;
+      width: 2.4rem;
+      height: 2rem;
+      color: $White;
+      text-align: center;
+      font-size: 1.4rem;
+      padding-top: 0.1rem;
+      border-radius: 0.4rem;
+      -webkit-border-radius: 0.4rem;
+      -moz-border-radius: 0.4rem;
+      -ms-border-radius: 0.4rem;
+      -o-border-radius: 0.4rem;
+    }
+  }
+}
+.notification__list {
+  list-style-type: none;
+  color: $GrayishBlue;
+  padding: 0 3.2rem;
+  @include respond(phone) {
+    padding: 0 1.6rem;
+  }
+
+  &-item-unread {
+    background-color: $VeryLightGrayishBlue;
+  }
+
+  &-item {
+    padding: 1.2rem 0.6rem;
+    &:not(:last-child) {
+      margin-bottom: 2.4rem;
+    }
+    display: flex;
+    align-items: flex-start;
+
+    .avatar__box {
+      width: 15%;
+      text-align: center;
+
+      .avatar__imag {
+        width: 50%;
+        @include respond(phone) {
+          width: 85%;
+        }
+      }
+      .my__tagged_avatar {
+        width: 60%;
+        @include respond(phone) {
+          width: 85%;
+        }
+      }
+    }
+    .notification {
+      &__data {
+        width: 80%;
+        @include respond(phone) {
+          padding-left: 1.2rem;
+        }
+      }
+      &__heading {
+        .user__name {
+          color: $veryDarkBlue;
+          font-weight: 800;
+        }
+        .post__name {
+          color: $DarkGrayishBlue;
+          font-weight: 800;
+        }
+        .club__name {
+          color: $Blue;
+          font-weight: 800;
+        }
+        .club__name:hover,
+        .post__name:hover,
+        .user__name:hover {
+          color: $Blue;
+          cursor: pointer;
+        }
+        .unread {
+          color: $Red;
+        }
+      }
+      &__detailed {
+        flex-basis: 100%;
+        padding: 1.2rem 0 1.2rem 10%;
+        .msg {
+          padding: 1.6rem;
+          border: 1px solid $LightGrayishBlue2;
+          border-radius: 3px;
+          -webkit-border-radius: 3px;
+          -moz-border-radius: 3px;
+          -ms-border-radius: 3px;
+          -o-border-radius: 3px;
+        }
+        .msg:hover {
+          background-color: $LightGrayishBlue1;
+          cursor: pointer;
+        }
+      }
+
+      &__time {
+        margin-top: 0.6rem;
+      }
+    }
+  }
+}
