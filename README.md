@@ -3,6 +3,7 @@
 ![Design preview for the Notifications page coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
+https://front-end-mentor-works.github.io/notification-page/
 
 Thanks for checking out this front-end coding challenge.
 
