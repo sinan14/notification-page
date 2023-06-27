@@ -1,3 +1,5 @@
+# The project is live at
+https://front-end-mentor-works.github.io/notification-page/
 # Frontend Mentor - Notifications page
 
 ![Design preview for the Notifications page coding challenge](./design/desktop-preview.jpg)
